@@ -12,7 +12,7 @@ loader = NotionDirectoryLoader(notion_db_directory)
 docs = loader.load()
 
 # Process and work with the loaded data as needed
-print(docs) # This will used as input for the next step
+print(docs) # This will be used as input for the next step
 
 # Find all CSV files in the directory
 csv_files = glob.glob(f"{notion_db_directory}/*.csv")
@@ -27,4 +27,4 @@ for csv_file in csv_files:
         # Print each row of data
         for row in csv_reader:
             data = dict(zip(headers, row))
-            print(data) # This will used as input for the next step
+            print(data) # This will be used as input for the next step
